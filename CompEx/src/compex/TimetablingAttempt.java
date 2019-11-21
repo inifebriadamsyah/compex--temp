@@ -2,18 +2,14 @@ package compex;
 
 import compex.Optimizer;
 
-/**
- *
- * @author Muris Timetabling
- */
 public class TimetablingAttempt {
 
     static final String DIREKTORI = "E:/Frequently Used/Edukasi/Kuliah/Semester 7/Optimasi Kombinatorik dan Heuristik/Toronto/";
 
     public static void main(String[] args) {
         // Direktori file
-        String stud_set = DIREKTORI + "yor-f-83.stu";
-        String crs_set = DIREKTORI + "yor-f-83.crs";
+        String stud_set = DIREKTORI + "pur-s-93.stu";
+        String crs_set = DIREKTORI + "pur-s-93.crs";
 
         String test_stu = DIREKTORI + "test.stu";
         String test_crs = DIREKTORI + "test.crs";

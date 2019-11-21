@@ -2,12 +2,6 @@ package compex;
 
 import java.util.Scanner;
 import compex.Utils;
-//import okh.Optimizer;
-
-/**
- *
- * @author Muris Simulasi Timetabling
- */
 public class Main {
 
     static final String DIREKTORI = "E:/Frequently Used/Edukasi/Kuliah/Semester 7/Optimasi Kombinatorik dan Heuristik/Toronto/";

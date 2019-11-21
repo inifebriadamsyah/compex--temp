@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -20,7 +19,7 @@ public class ConflictMatrix {
             FileReader filereader = new FileReader(dir);
             BufferedReader bufferedreader = new BufferedReader(filereader);
 
-            creatiingMatrix(bufferedreader);
+            creatingMatrix(bufferedreader);
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -34,7 +33,7 @@ public class ConflictMatrix {
         return conflict_matrix;
     }
 
-    public void creatiingMatrix(BufferedReader br) {
+    public void creatingMatrix(BufferedReader br) {
         String courseLine = null;
         try {
             while ((courseLine = br.readLine()) != null) {
@@ -103,9 +102,7 @@ public class ConflictMatrix {
                 largestDegree[i][j] = temp[courseDegree[i][0] - 1][courseDegree[j][0] - 1];
             }
         }
-
         return largestDegree;
-
     }
 
     public void printMatrix() {
@@ -116,10 +113,7 @@ public class ConflictMatrix {
             System.out.println();
         }
     }
-
-    /*
-     * METHOD BUAT RANDOM SEARCH
-     */
+    
     public int getRandomNumber(int min, int max) {
         Random random = new Random();
         return random.nextInt(max - min) + min;
@@ -138,7 +132,6 @@ public class ConflictMatrix {
             randomIndex[i][0] = course.get(randomNumber);
             course.remove(randomNumber);
         }
-
         return randomIndex;
     }
 
