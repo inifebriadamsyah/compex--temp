@@ -9,7 +9,7 @@ package compex;
  *
  * @author adam
  */
-public class CompEx {
+public class AttemptingTimetabling {
 
     /**
      * @param args the command line arguments
